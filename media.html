@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .responsive-image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+        }
+        .bio {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>About Me</h1>
+    <p class="bio"> My name is Taiwo Saidat,a final-year Pharmacy student at the University of Lagos, Akoka, with a passion for combining science, technology, and creativity. As a technical writer also, I specialize in breaking down complex tech concepts into clear, engaging content, making it easier for readers to understand and apply. Beyond academics and writing, I'm also an entrepreneur, running a thriving business selling stylish heels and bags. With a unique blend of analytical skills, creativity, and entrepreneurial spirit, I am dedicated to excelling in diverse fields while leaving a positive impact on others.</p>
+
+    <h2> Picture Element</h2>
+    <picture>
+        <source srcset="images/me-mobile.jpg" media="(max-width: 600px)">
+        <source srcset="images/me-tablet.jpg" media="(max-width: 900px)">
+        <img src="images/me-desktop.jpg" alt="About Me" class="responsive-image">
+    </picture>
+
+    <h2>Audio Element</h2>
+    <audio controls>
+        <source src="audio/intro.mp3" type="audio/mpeg">
+        Your browser does not support the audio elemnt.
+    </audio>
+
+    <h2>Video Element</h2>
+    <video controls width="100%" height="auto">
+        <source src="video/intro.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
